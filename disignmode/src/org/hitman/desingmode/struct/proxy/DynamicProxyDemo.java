@@ -1,4 +1,4 @@
-package org.hitman.desingmode.proxy;
+package org.hitman.desingmode.struct.proxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

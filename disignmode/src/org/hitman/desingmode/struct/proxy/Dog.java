@@ -1,4 +1,4 @@
-package org.hitman.desingmode.proxy;
+package org.hitman.desingmode.struct.proxy;
 
 public class Dog implements IBark{
     @Override
