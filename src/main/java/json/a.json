@@ -1,0 +1,16 @@
+{
+    "icon": "",
+    "uri": "app_albumlist",
+    "pkg": "com.gala.video.plugin.albumlist",
+    "version": "11.3.0.127447",
+    "option": 0,
+    "keepStrategy": "0",
+    "md5": "c287ba71cbd77fae216835bd5d2071e1",
+    "supportHotfix": "true",
+    "dependencies": [
+        
+    ],
+    "commits": {
+        "a_albumlist": "e48b711f6b2ec7628fc9ae8c727df9b3d22494d8"
+    }
+}

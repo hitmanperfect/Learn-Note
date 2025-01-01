@@ -1,0 +1,10 @@
+1、实现 Serializable 接口后，如果不显式的声明 serialVersionUID ,系统会帮着生成一个
+    序列化时会根据当前的Class 的信息生成一个serialVersionUID，
+    反序列化时，同样会根据当前Class 的信息生成一个serialVersionUID
+2、系统生成的 serialVersionUID 可能和 Class 的各个Field 有关（
+    和 field 的类型和变量名有关。和field 值无关
+    和 static、final、transient有关 等修饰符有关
+3、系统生成的 serialVersionUID 在编译期间是没有的，
+    即查看其 class 是查不到的serialVersionUID 这个属性的（javap + IDEA）
+
+
