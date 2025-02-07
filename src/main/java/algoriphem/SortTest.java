@@ -1,16 +1,25 @@
 package algoriphem;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  *
  */
+
+class A{}
+class B extends A{}
 public class SortTest {
+
+//	static void addB()
     public static void main(String[] args) {
 	  int[] arr = {1,2,3,4,5,6,7,8};
 	  int[] arr1 = {2, 3, 4, 1, 2};
 	  int[] arr2 = {8, 7, 6, 5, 4, 3, 2, 1};
 	  int[] arr3 = {3,2,1,5,6,4};
+	  List<A> la= new ArrayList<A>();
+	  la.add(new B());
 
 //	  bubbleSort(arr);
 //	  bubbleSort(arr2);

@@ -1,7 +1,5 @@
 package json;
 
-import com.oracle.javafx.jmx.json.JSONFactory;
-import net.sf.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -13,12 +11,12 @@ public class JsonTest {
             String path = "./src/json/a.json";
             File ff = new File(".");
             System.out.println(ff.getAbsolutePath());
-            JSONObject object = JSONObject.fromObject(getJsonFromFile(path));
-            Boolean support = object.getBoolean("supportHotfix");
-            int option = object.getInt("option");
-            Object objOption = object.get("option");
-            String lala = object.optString("lalal","");
-            System.out.println(lala == null);
+//            JSONObject object = JSONObject.fromObject(getJsonFromFile(path));
+//            Boolean support = object.getBoolean("supportHotfix");
+//            int option = object.getInt("option");
+//            Object objOption = object.get("option");
+//            String lala = object.optString("lalal","");
+//            System.out.println(lala == null);
 //            System.out.println(option);
 //            System.out.println(objOption);
 //            System.out.println(support);

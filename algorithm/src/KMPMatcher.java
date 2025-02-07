@@ -19,7 +19,7 @@ public class KMPMatcher {
             }
 
             if (j == a.length()) {
-                indices.add(i - j+a.length()-1); // add index
+                indices.add(i - j); // add index
                 j = lps[j - 1];
             } else if (i < b.length() && a.charAt(j) != b.charAt(i)) {
                 if (j != 0) {
@@ -58,7 +58,7 @@ public class KMPMatcher {
 
     public static void main(String[] args) {
         KMPMatcher kmpMatcher = new KMPMatcher();
-        String a = "ab";
+        String a = "abc";
         String b = "abcxabcdabcyabczabc";
         List<Integer> indices = kmpMatcher.findSubstring(a, b);
         System.out.println(indices); // Output: [0, 5, 9]
