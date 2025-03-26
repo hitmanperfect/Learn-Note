@@ -23,7 +23,14 @@ List<? extends Animal> 本身表示一个协变的类型，但是否真正体现
 体现协变特性方式有2：赋值行为 + 读取操作
 
 
-#  记忆
+#  理解&记忆
+是先有的限制（只能写不能读，或者只能读不能写），才有的逆变和协变的概念。
+List<? extends Animal> l1 = new ArrayList<Dog>(), 只知道里面是Animal的子类型（不会包含多种类型），但不知道是哪个子类型，所以不能往里面
+写元素，只能按Animal读
+
+List<? super Dog> l2 = new ArrayList<Animal>(), 只知道里面存的是Dog的父类型，但不知道是哪个父类型（Object or Animal 或者其他），
+因为不知道类型，所以不能读，只能按Dog写
+
 简称PECS， 这里面一共有3个角色，生产者、消费者、容器 
 - Producer ， extends ，它作为生产者、user 只能作为消费者， 只能读取其中的内容，按什么读？按父类读
 - Consumer ， super， 它作为消费者，user 只能作为生产者，往里写。能写什么类型？写子类的对象或者衍生对象

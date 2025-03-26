@@ -10,7 +10,8 @@ public class TestGenericJava {
     }
 
     void testBubian(){
-        List<Dog> l1 = new ArrayList<>();
+        List<Dog> l1 = new ArrayList<Dog>();
+
 //        List<Animal> l2 = l1;   //编译报错
     }
      void testNibian(){

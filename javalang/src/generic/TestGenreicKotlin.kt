@@ -58,11 +58,11 @@ fun testXiebian(){
 
 fun testbubian(){
     //错误case1 ，可变的集合，需要保证不变性
-    val cats: MutableList<Cat> = ArrayList()
+    val cats: MutableList<Cat> = mutableListOf()
 //    val animals: MutableList<Animal> = cats // 编译错误 ,此时集合是可变的，需保证不变性
 
     //错误case2 ，不可变的集合，虽在kotlin中未提示编译报错，但不推荐这么写
-    val cats2: List<Cat> = ArrayList()
+    val cats2: List<Cat> = arrayListOf()
     val animals2: List<Animal> = cats // 编译ok,  但不推荐这么写，java中编译报错
 
 
