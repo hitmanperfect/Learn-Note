@@ -19,7 +19,13 @@ import java.util.Stack;
  * 0 <= 链表长度 <= 10000
  */
 public class Offer_06 {
+
+	static final int a ;
+	static {
+		a = 6;
+	}
     public static void main(String[] args) {
+//		a = 6;
 	  new Offer_06().test();
     }
     // 用链表时间复杂度略高
